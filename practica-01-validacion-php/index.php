@@ -1,3 +1,3 @@
 <?php
 
-echo "Probando proteccion de main"
+echo "Hola, estoy aprendiendo CI/CD con PHP!\n";
