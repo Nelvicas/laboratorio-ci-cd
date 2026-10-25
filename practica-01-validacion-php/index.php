@@ -1,3 +1,3 @@
 <?php
 
-echo "Probando un error en GitHub Actions"
+echo "Hola, estoy aprendiendo CI/CD con PHP!\n";
