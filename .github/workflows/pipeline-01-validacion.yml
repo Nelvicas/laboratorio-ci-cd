@@ -1,0 +1,28 @@
+name: Pipeline 01 - Validacion PHP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar-php:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Validar sintaxis PHP
+        run: |
+          cd practica-01-validacion-php
+          bash scripts/validate.sh

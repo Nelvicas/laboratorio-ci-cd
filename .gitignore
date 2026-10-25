@@ -1,0 +1,17 @@
+# Instalador AWS CLI
+/aws/
+/awscliv2.zip
+
+# Credenciales y archivos sensibles
+.env
+.env.*
+.aws/
+*.pem
+*.key
+
+# Archivos temporales
+*.log
+*.bak
+
+# Dependencias PHP
+vendor/
