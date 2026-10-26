@@ -1,0 +1,23 @@
+name: Pipeline 02 - Pruebas PHP
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pruebas-php:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descarga Codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with: 
+          php-version: '8.3'
+        
+      - name: Ejecutar pruebas PHP
+        run: php practica-02-pruebas/test_calculadora.php
+        
