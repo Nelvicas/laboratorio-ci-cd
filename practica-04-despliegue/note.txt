@@ -1,0 +1,14 @@
+docker run -d \
+  --name laboratorio-php-web \
+  -p 127.0.0.1:8090:8000 \
+  laboratorio-php-web:v1
+
+
+¿Qué significa cada parámetro?
+Parámetro	                             Función
+docker run	                     Crea e inicia un contenedor
+-d	                             Lo ejecuta en segundo plano (detached)
+--name	                         Asigna un nombre al contenedor
+-p	                             Publica un puerto del contenedor
+127.0.0.1:8090:8000	             Conecta el puerto local 8090 con el 8000 del contenedor
+laboratorio-php-web:v1	         Imagen que acabamos de construir
