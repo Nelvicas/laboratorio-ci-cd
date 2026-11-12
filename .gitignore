@@ -12,6 +12,7 @@
 # Archivos temporales
 *.log
 *.bak
+*.tmp
 
 # Dependencias PHP
 vendor/
